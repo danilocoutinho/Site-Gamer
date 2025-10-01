@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #F21B2D;
+    --cor1:#A60311;
+    --cor2:#73020C;
+    --cor3: #40010D;
+    --cor4: #150000;
+
+    --fonte-titulo: 'Courier New', Courier, monospace;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+main > a.externo::after {
+    content: '\1F517';
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    padding: 40px;
+    text-align: center;
+}
+
+header #logo {
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding-bottom: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.185);
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    font-size: 0.9em;
+    padding-right: 20px;
+    padding: 8px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    padding: 10px;
+}
+
+main {
+    max-width: 800px;
+    min-width: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.386);
+    margin: auto;
+    background-color: white;
+}
+
+main h2 {
+    font-family: var(--fonte-titulo);
+    font-weight: 800;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+}
+
+main h3 {
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    padding: 5px;
+}
+
+main p {
+    padding: 5px;
+}
+
+main img {
+    max-width: 550px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+main ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    padding: 2px;
+}
+
+main .link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+main a {
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+main a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+div.video {
+    background-color: var(--cor3);
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    background-color: var(--cor4);
+}
+
+footer p {
+    font-family: var(--fonte-titulo);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
